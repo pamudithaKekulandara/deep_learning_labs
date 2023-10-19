@@ -1,0 +1,3 @@
+2) 1. Accuracy increases
+
+2. Accuracy increases when the number of nodes of the hidden layers increases. And after one point Accuracy varies but not achieving the end point.
