@@ -1,0 +1,24 @@
+Question 1: Explain how 1D convolution can be used to identify the edges in an image:
+
+1D convolution with the filter [-1, 1] identifies edges by detecting intensity changes.
+Negative values capture intensity decreases, and positive values capture increases, producing peaks at edge positions.
+This technique applies similarly to images: convert to 1D, convolve with an edge-sensitive filter, and find peaks to locate edges.
+
+
+
+Question 3: Why does the validation error increase when the number of epochs is increased, and how to prevent it:
+
+When the validation error increases with more epochs, it's a sign of overfitting.
+To prevent overfitting, you can:
+Implement early stopping: Stop training when validation error starts to increase.
+Apply regularization techniques like L1 or L2 regularization.
+Use dropout: Randomly deactivate connections during training.
+Increase the amount of training data if possible.
+Explanation of why mini-batch Stochastic Gradient Descent converges faster than batch Gradient Descent:
+
+Batch Gradient Descent considers the entire dataset in each step, which can be time-consuming.
+Mini-batch Stochastic Gradient Descent updates parameters using smaller batches of data, allowing for more frequent updates.
+This frequent updating can lead to faster convergence compared to the batch Gradient Descent, as it doesn't wait for the entire dataset to be processed in each iteration.
+
+
+
